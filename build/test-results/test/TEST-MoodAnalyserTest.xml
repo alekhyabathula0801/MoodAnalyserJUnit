@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="MoodAnalyserTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2020-04-30T05:24:20" hostname="LAPTOP-VMLRSS4V" time="0.003">
+<testsuite name="MoodAnalyserTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2020-05-01T07:14:29" hostname="LAPTOP-VMLRSS4V" time="0.038">
   <properties/>
-  <testcase name="givenMessage_ifSad_thenReturnSad" classname="MoodAnalyserTest" time="0.003"/>
+  <testcase name="givenMessage_ifSad_thenReturnSad" classname="MoodAnalyserTest" time="0.004"/>
+  <testcase name="givenEmpty_shouldThrowException" classname="MoodAnalyserTest" time="0.031"/>
   <testcase name="givenMessage_ifNotSad_thenReturnHappy" classname="MoodAnalyserTest" time="0.0"/>
+  <testcase name="givenNull_shouldThrowException" classname="MoodAnalyserTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

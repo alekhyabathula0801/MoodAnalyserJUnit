@@ -1,7 +1,7 @@
-package com.moodAnalyser.moodAnalyserTest;
+package com.moodAnalyser;
 
-import com.moodAnalyser.MoodAnalysisException;
-import com.moodAnalyser.MoodAnalyser;
+import com.MoodAnalyser;
+import com.MoodAnalysisException;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -19,7 +19,7 @@ public class MoodAnalyserTest {
         Assert.assertEquals("HAPPY", mood);
     }
     @Test
-    public void givenNull_shouldThrowException() {
+    public void givenNull_shouldReturnEnteredNullMessage() {
         MoodAnalyser moodAnalyser = new MoodAnalyser(null);
         try {
             moodAnalyser.analyseMood();
@@ -28,7 +28,7 @@ public class MoodAnalyserTest {
         }
     }
     @Test
-    public void givenEmpty_shouldThrowException() {
+    public void givenEmpty_shouldReturnEnteredEmptyMessage() {
         MoodAnalyser moodAnalyser = new MoodAnalyser("");
         try {
             moodAnalyser.analyseMood();
